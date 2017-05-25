@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE generatorConfiguration  
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!-- 配置Run As Maven build : Goals 参数 : mybatis-generator:generate -Dmybatis.generator.overwrite=true -->
+<generatorConfiguration>
+	<properties url="${mybatis.properties}"/>
+    <!-- mysql驱动jar在本机的地址，用于连接数据库 -->
+    <classPathEntry location="${drive.class.path}"/>
+    <context id="mysqlTables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressDate" value="true" /> <!-- 是否注释 -->
+            <property name="suppressAllComments" value="true" /> <!-- 是否生成注释时间戳 -->
+        </commentGenerator>
+        <jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbc.url}" userId="${jdbc.username}" password="${jdbc.password}" />
+        <javaTypeResolver>
+        	<!-- 是否使用bigDecimal， false可自动转化以下类型（Long, Integer, Short, etc.） -->
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置-->
+        <javaModelGenerator targetPackage="${model.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- 生成的映射文件包名和位置  -->
+        <sqlMapGenerator targetPackage="${mapper.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="xmlmapper" targetPackage="${dao.package}" targetProject="${target.project}">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+        <!-- 配置表信息 -->
+        <!--  tableName为对应的数据库表 domainObjectName是要生成的实体类 enable*ByExample 
+            	是否生成 example类 -->
+        <table tableName="admin" domainObjectName="Admin" enableCountByExample="false" enableUpdateByExample="false"
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <!-- 主键id的自动生成策略 -->
+            <generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()" />
+        </table>
+    </context>
+</generatorConfiguration>
