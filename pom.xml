@@ -24,7 +24,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <!-- spring -->
         <!-- mybatis -->
         <mybatis.spring.boot.version>1.3.0</mybatis.spring.boot.version>
         <pagehelper.version>5.0.1</pagehelper.version>
