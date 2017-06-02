@@ -1,8 +1,12 @@
 package com.asozero.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Admin {
+public class Admin implements Serializable{
+
+    private static final long serialVersionUID = -1231130626796846071L;
+
     private Long id;
 
     private Date createDate;
