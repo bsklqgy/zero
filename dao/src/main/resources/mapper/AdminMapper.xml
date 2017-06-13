@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.asozero.dao.AdminMapper">
-  <cache type="com.asozero.utils.RedisCache" />
   <resultMap id="BaseResultMap" type="com.asozero.model.Admin">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
@@ -24,7 +23,7 @@
     login_date, last_login_date, login_failure_count, login_ip, name, password, username
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select
+    select 
     <include refid="Base_Column_List" />
     from admin
     where id = #{id,jdbcType=BIGINT}
@@ -37,18 +36,18 @@
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Long">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into admin (id, create_date, modify_date,
-    department, email, is_enabled,
-    is_locked, locked_date, login_date,
-    last_login_date, login_failure_count, login_ip,
-    name, password, username
-    )
-    values (#{id,jdbcType=BIGINT}, #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP},
-    #{department,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{isEnabled,jdbcType=BIT},
-    #{isLocked,jdbcType=BIT}, #{lockedDate,jdbcType=TIMESTAMP}, #{loginDate,jdbcType=TIMESTAMP},
-    #{lastLoginDate,jdbcType=TIMESTAMP}, #{loginFailureCount,jdbcType=INTEGER}, #{loginIp,jdbcType=VARCHAR},
-    #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}
-    )
+    insert into admin (id, create_date, modify_date, 
+      department, email, is_enabled, 
+      is_locked, locked_date, login_date, 
+      last_login_date, login_failure_count, login_ip, 
+      name, password, username
+      )
+    values (#{id,jdbcType=BIGINT}, #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP}, 
+      #{department,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{isEnabled,jdbcType=BIT}, 
+      #{isLocked,jdbcType=BIT}, #{lockedDate,jdbcType=TIMESTAMP}, #{loginDate,jdbcType=TIMESTAMP}, 
+      #{lastLoginDate,jdbcType=TIMESTAMP}, #{loginFailureCount,jdbcType=INTEGER}, #{loginIp,jdbcType=VARCHAR}, 
+      #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.asozero.model.Admin">
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Long">
@@ -212,7 +211,6 @@
       username = #{username,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-
   <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />

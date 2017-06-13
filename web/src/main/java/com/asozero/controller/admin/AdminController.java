@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
@@ -24,14 +23,7 @@ public class AdminController {
     @GetMapping("/check_username")
     @ResponseBody
     public boolean checkUsername(String username) {
-        if (StringUtils.isEmpty(username)) {
-            return false;
-        }
-        if (adminService.findByUsername(username)!=null) {
-            return false;
-        } else {
-            return true;
-        }
+        return !StringUtils.isEmpty(username) && adminService.findByUsername(username)!=null;
     }
 
 }

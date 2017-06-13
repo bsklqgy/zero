@@ -8,6 +8,12 @@
     <!-- mysql驱动jar在本机的地址，用于连接数据库 -->
     <classPathEntry location="${drive.class.path}"/>
     <context id="mysqlTables" targetRuntime="MyBatis3">
+        <!-- include the plugin -->
+        <plugin type="com.asozero.LombokPlugin">
+            <!-- enable annotations -->
+            <property name="builder" value="false"/>
+            <property name="allArgsConstructor" value="false"/>
+        </plugin>
         <commentGenerator>
             <property name="suppressDate" value="true" /> <!-- 是否注释 -->
             <property name="suppressAllComments" value="true" /> <!-- 是否生成注释时间戳 -->
