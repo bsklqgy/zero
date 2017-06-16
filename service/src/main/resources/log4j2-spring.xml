@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- status="off",log4j2把自身事件记录到控制台的配置，off表示不记录，其余的记录有trace，debug，info，warn，error，fatal  
+#FATAL       0  记录影响系统正常运行，可能导致系统崩溃的事件
+#ERROR       3  记录影响业务流程正常进行，导致业务流程提前终止的事件
+#WARN        4  记录未预料到，可能导致业务流程无法进行的事件
+#INFO        6  记录系统启动/停止，模块加载/卸载之类事件
+#DEBUG       7  记录业务详细流程，用户鉴权/业务流程选择/数据存取事件
+#TRACE          记录系统进出消息，码流信息
+级别顺序（低到高）：TRACE < DEBUG < INFO < WARN < ERROR < FATAL
+monitorInterval表示检测更改配置的时间,单位是秒,最小间隔为5秒,0或负数表示不检测 -->
+<configuration name="x-cfg" status="off" monitorInterval="0">
+	<properties>
+		<!--${sys:user.home} 是 home 目录-->
+    	<property name="LOG_HOME">${sys:user.home}</property>
+    	<property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss z} %-5level %class{36}%L%M - %msg%xEx%n</property>
+		<property name="INCLUDELOCATION">true</property>
+	</properties>
+	<appenders>
+		<!--常用于开发环境中,默认是system_err,还有一个system_out -->
+		<console name="console" target="system_out">
+			<!-- appender级别的日志过滤-->
+			<thresholdFilter level="DEBUG" onMatch="accept" onMismatch="deny"/>
+			<patternLayout pattern="${LOG_PATTERN}" />
+		</console>
+		<!--常用于生产环境 -->
+		<!--每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档 -->
+		<!-- interval 多久执行一次备份，单位为 RollingRandomAccessFile的属性filePattern中%d{yyyy-MM-dd}的最小时间单位，此处是天-->
+		<RollingRandomAccessFile name="RollingRandomAccessFile" fileName="${LOG_HOME}/x-app.log"
+					 filePattern="${LOG_HOME}/$${date:yyyy-MM}/x-app-%d{yyyy-MM-dd}-%i.log.gz" immediateFlush="false">
+			<PatternLayout pattern="${LOG_PATTERN}"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+				<SizeBasedTriggeringPolicy size="20 MB"/>
+			</Policies>
+		</RollingRandomAccessFile>
+	</appenders>
+	<loggers>
+		<!-- additivity=false 一旦一个日志输出到一个Logger，那么这个日志不会再继续向父Logger进行传递-->
+		<logger name="com.asozero.dao" level="DEBUG" additivity="false" includeLocation="${INCLUDELOCATION}">
+			<appender-ref ref="console" />
+		</logger>
+		<root level="ERROR">
+			<appender-ref ref="console" />
+			<!--<appender-ref ref="RollingRandomAccessFile" />-->
+		</root>
+	</loggers>
+</configuration> 

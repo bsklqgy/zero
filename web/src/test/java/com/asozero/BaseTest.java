@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = Application.class)
+@SpringBootTest(classes = WebApplication.class)
 @EnableTransactionManagement
 public class BaseTest{
 
