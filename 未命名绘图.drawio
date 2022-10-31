@@ -1,14 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2022-10-31T06:38:27.498Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15" etag="TWCsVXFV-_bSMXebPyPw" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-31T07:26:58.237Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Safari/605.1.15" etag="HM-B-6xGjQBrlFO3M07j" version="20.5.1" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="1886" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="77e6c97f196da883-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;门诊挂号&lt;/font&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-20" y="40" width="620" height="1250" as="geometry" />
+          <mxGeometry x="-20" y="40" width="600" height="2000" as="geometry" />
         </mxCell>
-        <mxCell id="77e6c97f196da883-2" value="基层医疗机构" style="swimlane;html=1;startSize=20;aspect=fixed;" parent="77e6c97f196da883-1" vertex="1">
-          <mxGeometry y="20" width="200" height="1230" as="geometry" />
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-125" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-123" target="57HQDjPQBf11Cq4bDGbG-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-129" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-124" target="57HQDjPQBf11Cq4bDGbG-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-130" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-127" target="57HQDjPQBf11Cq4bDGbG-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-133" value="平台不通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-128" target="57HQDjPQBf11Cq4bDGbG-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-135" value="平台通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-128" target="57HQDjPQBf11Cq4bDGbG-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-137" value="上级机构不通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.889;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-134" target="57HQDjPQBf11Cq4bDGbG-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-138" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-136" target="57HQDjPQBf11Cq4bDGbG-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-144" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-142" target="57HQDjPQBf11Cq4bDGbG-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-145" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-139" target="57HQDjPQBf11Cq4bDGbG-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-148" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-127" target="57HQDjPQBf11Cq4bDGbG-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-149" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-128" target="57HQDjPQBf11Cq4bDGbG-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-150" value="平台不通过" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="57HQDjPQBf11Cq4bDGbG-149">
+          <mxGeometry x="0.2945" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-151" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-139" target="57HQDjPQBf11Cq4bDGbG-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="77e6c97f196da883-2" value="基层医疗机构" style="swimlane;html=1;startSize=20;aspect=fixed;whiteSpace=wrap;" parent="77e6c97f196da883-1" vertex="1">
+          <mxGeometry y="20" width="200" height="1980" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-8" value="诊间转诊" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" parent="77e6c97f196da883-2" vertex="1">
           <mxGeometry x="40" y="40" width="90" height="35" as="geometry" />
@@ -19,7 +60,7 @@
         <mxCell id="57HQDjPQBf11Cq4bDGbG-11" value="登记信息并选择医院" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-2">
           <mxGeometry x="40" y="140" width="90" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="77e6c97f196da883-13" value="上级医疗机构系统接口是否对接" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="77e6c97f196da883-2" vertex="1">
+        <mxCell id="77e6c97f196da883-13" value="上级医疗机构系统预约接口是否对接" style="rhombus;whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="77e6c97f196da883-2" vertex="1">
           <mxGeometry x="45" y="200" width="80" height="50" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-14" value="选择科室" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-2">
@@ -43,8 +84,11 @@
         <mxCell id="57HQDjPQBf11Cq4bDGbG-97" value="转诊申请失败" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="77e6c97f196da883-2">
           <mxGeometry x="40" y="690" width="90" height="35" as="geometry" />
         </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-158" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.433;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-2" source="57HQDjPQBf11Cq4bDGbG-106" target="57HQDjPQBf11Cq4bDGbG-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-106" value="转诊申请成功" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="77e6c97f196da883-2">
-          <mxGeometry x="45" y="820" width="90" height="35" as="geometry" />
+          <mxGeometry x="40" y="820" width="90" height="35" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-112" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;entryX=0;entryY=0;entryDx=0;entryDy=0;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-2" source="77e6c97f196da883-13" target="57HQDjPQBf11Cq4bDGbG-50">
           <mxGeometry relative="1" as="geometry">
@@ -58,8 +102,26 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-123" value="查看已申请&lt;br&gt;记录" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="77e6c97f196da883-2">
+          <mxGeometry x="40" y="950" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-127" value="选择某申请记录提交取消" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-2">
+          <mxGeometry x="40" y="1020" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-131" value="取消失败" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="77e6c97f196da883-2">
+          <mxGeometry x="40" y="1080" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-132" value="取消成功" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="77e6c97f196da883-2">
+          <mxGeometry x="40" y="1200" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-152" value="上级医疗机构未对接预约接口，审核流程" style="text;strokeColor=none;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;fontFamily=Helvetica;fontColor=default;whiteSpace=wrap;" vertex="1" parent="77e6c97f196da883-2">
+          <mxGeometry x="8.75" y="1300" width="162.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-157" value="打印转诊单" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-2">
+          <mxGeometry x="45" y="880" width="90" height="35" as="geometry" />
+        </mxCell>
         <mxCell id="77e6c97f196da883-3" value="双向转诊平台" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
-          <mxGeometry x="200" y="20" width="200" height="1230" as="geometry" />
+          <mxGeometry x="200" y="20" width="200" height="1980" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-58" value="转诊登记页" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
           <mxGeometry x="55" y="40" width="90" height="35" as="geometry" />
@@ -94,13 +156,45 @@
           <mxGeometry x="50" y="650" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-98" value="处理返回数据" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="55" y="740" width="90" height="35" as="geometry" />
+          <mxGeometry x="100" y="740" width="90" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="57HQDjPQBf11Cq4bDGbG-104" value="处理返回数据，并短信通知患者和上级机构负责人" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-104" value="处理返回数据，并短信通知上级机构负责人" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
           <mxGeometry x="32.5" y="810" width="135" height="45" as="geometry" />
         </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-124" value="该机构的申请列表" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="55" y="950" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-146" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-3" source="57HQDjPQBf11Cq4bDGbG-128" target="57HQDjPQBf11Cq4bDGbG-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-147" value="平台通过" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="57HQDjPQBf11Cq4bDGbG-146">
+          <mxGeometry x="-0.4231" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-128" value="统一业务规范验证" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="50" y="1020" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-136" value="处理返回数据" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="100" y="1110" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-139" value="处理返回数据，并短信通知上级机构负责人" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="37.5" y="1190" width="135" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-154" value="提交给该上次机构的申请列表" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="55" y="1340" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-167" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.456;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-3" source="57HQDjPQBf11Cq4bDGbG-160" target="57HQDjPQBf11Cq4bDGbG-166">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-160" value="统一业务规范验证" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="50" y="1430" width="100" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-166" value="处理数据，并短信通知患者" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="37.5" y="1530" width="135" height="45" as="geometry" />
+        </mxCell>
         <mxCell id="77e6c97f196da883-4" value="上级医疗机构" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
-          <mxGeometry x="400" y="20" width="200" height="1230" as="geometry" />
+          <mxGeometry x="400" y="20" width="200" height="1980" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-12" value="查询该机构未来两周可预约挂号科室列表（加上当天）" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
           <mxGeometry x="60" y="200" width="100" height="45" as="geometry" />
@@ -111,7 +205,7 @@
         <mxCell id="57HQDjPQBf11Cq4bDGbG-42" value="查询该排班的号源列表（包括号源序号、时间等）" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
           <mxGeometry x="50" y="490" width="100" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="57HQDjPQBf11Cq4bDGbG-103" value="机构通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-4" source="57HQDjPQBf11Cq4bDGbG-95" target="57HQDjPQBf11Cq4bDGbG-102">
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-103" value="上次机构通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-4" source="57HQDjPQBf11Cq4bDGbG-95" target="57HQDjPQBf11Cq4bDGbG-102">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-95" value="业务验证" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
@@ -119,6 +213,27 @@
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-102" value="保存申请信息和号源已用（无分时段时号源减一）" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
           <mxGeometry x="40" y="750" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-143" value="上级机构通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=-0.125;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-4" source="57HQDjPQBf11Cq4bDGbG-134" target="57HQDjPQBf11Cq4bDGbG-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-134" value="业务验证" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="50" y="1020" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-142" value="保存申请信息和号源已用（无分时段时号源加一）" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="60" y="1190" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-153" value="查看已申请&lt;br&gt;记录" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="60" y="1340" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-156" value="选择某申请记录审核确认或不通过" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="60" y="1420" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-162" value="审核失败" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="60" y="1510" width="90" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-163" value="审核成功" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="60" y="1580" width="90" height="35" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-60" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="77e6c97f196da883-8" target="57HQDjPQBf11Cq4bDGbG-58">
           <mxGeometry relative="1" as="geometry" />
@@ -181,7 +296,7 @@
         <mxCell id="57HQDjPQBf11Cq4bDGbG-99" value="平台不通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-93" target="57HQDjPQBf11Cq4bDGbG-97">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="57HQDjPQBf11Cq4bDGbG-100" value="机构不通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-95" target="57HQDjPQBf11Cq4bDGbG-98">
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-100" value="上级机构不通过" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-95" target="57HQDjPQBf11Cq4bDGbG-98">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="57HQDjPQBf11Cq4bDGbG-101" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-98" target="57HQDjPQBf11Cq4bDGbG-97">
@@ -204,7 +319,22 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="57HQDjPQBf11Cq4bDGbG-121" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-104" target="57HQDjPQBf11Cq4bDGbG-106">
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-121" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;fillColor=#f0a30a;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-104" target="57HQDjPQBf11Cq4bDGbG-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-155" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-153" target="57HQDjPQBf11Cq4bDGbG-154">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-159" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-154" target="57HQDjPQBf11Cq4bDGbG-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-161" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-156" target="57HQDjPQBf11Cq4bDGbG-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-165" value="失败" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.122;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-160" target="57HQDjPQBf11Cq4bDGbG-162">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57HQDjPQBf11Cq4bDGbG-168" style="edgeStyle=none;shape=connector;curved=1;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;endArrow=classic;" edge="1" parent="77e6c97f196da883-1" source="57HQDjPQBf11Cq4bDGbG-166" target="57HQDjPQBf11Cq4bDGbG-163">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
